@@ -7,7 +7,7 @@
 #O objetivo desse repositório é deixar o código de referência, usado durante o nivelamento, para consulta e abrir a possibilidade de interagir de maneira a tirar dúvidas e resolver questões levantadas durante nossa jornada.
 
 
-#Assuntos tradados:
+#Assuntos tratados:
 - Tipos de Dados
 - Coleções
 - condidionais
