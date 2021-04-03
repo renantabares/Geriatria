@@ -11,10 +11,10 @@ public class ColecoesHashMap {
 		chaveValor.put("chave2", "valor2");
 		chaveValor.put("chave3", "valor3");
 		
+		//Obtendo o valor apartir da chave
 		System.out.println(chaveValor.get("chave2"));
 		   
 		for (String key : chaveValor.keySet()) {
-
                //Capturamos o valor a partir da chave
                String value = chaveValor.get(key);
                System.out.println(key + " = " + value);
