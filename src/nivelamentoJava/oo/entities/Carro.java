@@ -1,18 +1,17 @@
 package nivelamentoJava.oo.entities;
 
 public class Carro {
-	
-	Double velocidade;
-	
+
+	Integer velocidade;
 	private String modelo;
 
-	public Carro(Double velocidade, String modelo) {
+	public Carro(Integer velocidade, String modelo) {
 		this.velocidade = velocidade;
 		this.modelo = modelo;
 	}
-	
-	public Carro () {
-		
+
+	public Carro() {
+
 	}
 
 	public String getModelo() {
@@ -22,19 +21,22 @@ public class Carro {
 	public void setModelo(String modelo) {
 		this.modelo = modelo;
 	}
-	
+
 	public void acelerar() {
-		
+
 	}
+
 	public void frear() {
-		
+
 	}
+
 	public void ascenderFarol() {
-		
+
 	}
-	
-	
-	
-	
+
+	public String toString() {
+		return "modelo: " + this.modelo + " velocidade: " + this.velocidade;
+
+	}
 
 }
