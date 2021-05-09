@@ -21,9 +21,6 @@ public class Main {
 		System.out.println(mini);
 		System.out.println(beetle);
 		System.out.println(saveiro);
-		
-		
-
 	}
 
 }
