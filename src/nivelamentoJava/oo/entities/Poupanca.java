@@ -8,7 +8,6 @@ public class Poupanca  extends Conta{
         super(numeroDaConta, titular, saldo);
     }
 
-  KerberosClientKeyExchange
     public void sacar(Double valor) {
         if ((valor+ 5.00) < getSaldo()) {
             setSaldo(getSaldo() - (valor + 5.00) );

@@ -3,7 +3,9 @@ package nivelamentoJava.oo;
 import java.util.Locale;
 
 import nivelamentoJava.oo.entities.Conta;
+import nivelamentoJava.oo.entities.ContaEmpresa;
 import nivelamentoJava.oo.entities.Poupanca;
+import nivelamentoJava.oo.exception.JavaBankException;
 
 public class JavaBank {
 
@@ -25,7 +27,13 @@ public class JavaBank {
 		System.out.println(poupanca);
 		poupanca.sacar(30.00);
 		System.out.println(poupanca);
-
+		ContaEmpresa contaEmpresa = new ContaEmpresa(231, "Renan Empresário", 1000.00, 500.00);
+		try {
+			System.out.println(contaEmpresa.realizarEMprestimo(510.00, 12));
+		}catch (JavaBankException e){
+			System.out.println("empréstimo não autorizado: "+e.getMessage() );
+		}
+		System.out.println(contaEmpresa);
 	}
 
 }
